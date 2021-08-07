@@ -1,0 +1,62 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID"
+         version="2.5">
+
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.kuang.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>geta</servlet-name>
+    <servlet-class>com.kuang.servlet.GetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>geta</servlet-name>
+    <url-pattern>/geta</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>gp</servlet-name>
+    <servlet-class>com.kuang.servlet.ServletDemo03</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>gp</servlet-name>
+    <url-pattern>/gp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sd4</servlet-name>
+    <servlet-class>com.kuang.servlet.ServletDemo04</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sd4</servlet-name>
+    <url-pattern>/sd4</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>sd5</servlet-name>
+    <servlet-class>com.kuang.servlet.ServletDemo05</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sd5</servlet-name>
+    <url-pattern>/sd5</url-pattern>
+  </servlet-mapping>
+
+</web-app>
